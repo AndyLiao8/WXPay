@@ -20,7 +20,7 @@ co(function *(){
   });
   let rlt = yield wxpay.createUnifiedOrder({
     body: '扫码支付测试',
-    out_trade_no: pays.util.generateID(),
+    out_trade_no: pay.util.generateID(),
     total_fee: 1,
     spbill_create_ip: '127.0.0.1',
     notify_url: 'http://wxpay_notify_url',
