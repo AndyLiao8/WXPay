@@ -1,7 +1,7 @@
 "user strict";
 
 class PayFactory{
-    static instance(pay){
+    static provider(pay){
         switch(pay){
             case "WXPay":
                 return require("./providers/wxpay");
