@@ -9,7 +9,24 @@ nodejs实现微信支付API
 ### 代码
 <pre>
 <code>
-let pays = require("./index");
+let pay = require("./index");
+let WXPay = pay.provider("WXPay");
 
+co(function *(){
+  let wxpay = new WXPay({
+    appid:'',
+    mch_id: '',
+    partner_key: ''
+  });
+  let rlt = yield wxpay.createUnifiedOrder({
+    body: '扫码支付测试',
+    out_trade_no: pays.util.generateID(),
+    total_fee: 1,
+    spbill_create_ip: '127.0.0.1',
+    notify_url: 'http://wxpay_notify_url',
+    trade_type: 'NATIVE',
+    product_id: '1234567890'
+  });
+});
 </code>
 </pre>
