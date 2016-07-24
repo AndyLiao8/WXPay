@@ -1,0 +1,23 @@
+{
+  "name": "wxpay",
+  "description": "微信API",
+  "version": "1.0.0",
+  "author": {
+    "name": "andy",
+    "email": "meitouniao@126.com"
+  },
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "dateformat": "^1.0.12",
+    "qr-image": "^3.1.0",
+    "request": "^2.54.0",
+    "xml2js": "^0.4.6"
+  },
+  "files": [
+    "Readme.md",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 6.0.0"
+  }
+}
