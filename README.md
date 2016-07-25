@@ -30,3 +30,8 @@ co(function *(){
 });
 </code>
 </pre>
+# 方法
+- createUnifiedOrder 创建定单
+- queryOrder 查询定单
+- closeOrder 取消定单
+- refund 退款
